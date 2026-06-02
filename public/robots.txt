@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://centralgas.com.br/sitemap.xml

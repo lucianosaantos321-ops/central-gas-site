@@ -1,0 +1,16 @@
+{
+  "name": "Central Gás",
+  "short_name": "Central Gás",
+  "description": "Peça gás pelo app, acompanhe sua entrega e monitore seu botijão.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff7ed",
+  "theme_color": "#f97316",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
