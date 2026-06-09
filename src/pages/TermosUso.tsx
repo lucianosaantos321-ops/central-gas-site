@@ -21,6 +21,8 @@ export function TermosUso() {
         <p>O Central Gás busca oferecer informações corretas e uma boa experiência, mas não garante disponibilidade contínua ou entrega em tempo fixo.</p>
         <h2>Contato oficial</h2>
         <p>WhatsApp: {siteConfig.phoneDisplay}</p>
+        <p>E-mail: {siteConfig.emailPlaceholder}</p>
+        <p>Site oficial: {siteConfig.baseUrl}</p>
       </LegalPageLayout>
     </>
   );

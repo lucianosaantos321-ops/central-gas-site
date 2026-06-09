@@ -35,7 +35,7 @@
 ## Antes do deploy
 
 - Trocar `PLAY_STORE_URL` pelo link real da Play Store.
-- Trocar domínio `https://centralgas.com.br` em `siteConfig.ts`, `robots.txt` e `sitemap.xml`, caso o domínio real seja outro.
+- Domínio oficial configurado: `https://www.centralgas.app.br`.
 - Substituir screenshots placeholder por prints reais do app.
 - Revisar e-mail de contato quando existir.
 - Confirmar WhatsApp oficial.

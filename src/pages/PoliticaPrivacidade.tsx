@@ -6,7 +6,7 @@ export function PoliticaPrivacidade() {
   return (
     <>
       <SEO title="Política de privacidade" path="/politica-de-privacidade" description="Política de privacidade do app Central Gás, com informações sobre dados coletados, uso, segurança, direitos e contato." />
-      <LegalPageLayout title="Política de privacidade" description="Esta política explica como o Central Gás trata dados pessoais usados na operação do app e do serviço.">
+      <LegalPageLayout title="Política de privacidade" description="Esta política explica como o Central Gás trata dados pessoais usados na operação do app, do site e do serviço.">
         <h2>Dados coletados</h2>
         <p>O Central Gás pode coletar nome, telefone, CPF quando usado no cadastro, data de nascimento quando usada, endereço, localização quando permitida, dados de pedidos e dados técnicos de notificações/dispositivo.</p>
         <h2>Uso dos dados</h2>
@@ -21,6 +21,8 @@ export function PoliticaPrivacidade() {
         <p>Para solicitar exclusão de conta e dados, acesse a página <a href="/exclusao-de-conta">Exclusão de conta</a>.</p>
         <h2>Contato</h2>
         <p>WhatsApp: {siteConfig.phoneDisplay}</p>
+        <p>E-mail: {siteConfig.emailPlaceholder}</p>
+        <p>Site oficial: {siteConfig.baseUrl}</p>
       </LegalPageLayout>
     </>
   );

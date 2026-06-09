@@ -22,8 +22,8 @@ export function Home() {
       <SEO
         title="Central Gás | Peça gás em minutos"
         path="/"
-        description="Peça gás pelo app Central Gás, acompanhe a entrega e monitore a estimativa do seu botijão."
-        keywords="Central Gás, entrega de gás, pedir gás, comprar gás, gás de cozinha, botijão de gás, app para pedir gás, gás no Guará"
+        description="Peça gás pelo app Central Gás no Guará/DF, acompanhe a entrega e monitore a estimativa do seu botijão."
+        keywords="Central Gás, entrega de gás no Guará DF, pedir gás pelo app, comprar botijão de gás, gás de cozinha, app para pedir gás"
       />
       <main>
         <section className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 md:grid-cols-[1fr_0.78fr] md:items-center lg:px-8 lg:py-16">
@@ -61,6 +61,21 @@ export function Home() {
             {homeBenefits.map((item) => (
               <FeatureCard key={item.title} {...item} />
             ))}
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+          <div className="rounded-[2rem] border border-orange-100 bg-white p-7 shadow-soft md:p-10">
+            <SectionTitle
+              eyebrow="Atendimento local"
+              title="Entrega de gás no Guará DF pelo aplicativo"
+              description="O Central Gás permite pedir gás pelo app, comprar botijão de gás, acompanhar o pedido, receber notificações e usar o monitoramento estimado do botijão pelo celular."
+            />
+            <p className="mt-5 max-w-4xl leading-8 text-slate-600">
+              A operação atende inicialmente o Guará/DF e regiões próximas conforme disponibilidade local,
+              horário de atendimento e condições da revenda responsável. O objetivo é oferecer uma forma
+              mais prática de solicitar gás de cozinha, sem prometer cobertura em todos os endereços.
+            </p>
           </div>
         </section>
 

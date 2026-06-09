@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://centralgas.com.br/sitemap.xml
+Sitemap: https://www.centralgas.app.br/sitemap.xml

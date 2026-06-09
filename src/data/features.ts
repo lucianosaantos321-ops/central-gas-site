@@ -50,10 +50,10 @@ export const homeBenefits = [
 ];
 
 export const appFeatures = [
-  { title: "Cadastro e login", description: "Acesso por telefone, senha e conta do cliente.", icon: Smartphone },
-  { title: "Endereços salvos", description: "Cadastre endereço principal, telefone e localização opcional.", icon: Home },
-  { title: "Loja", description: "Estrutura para botijões P13, P20, P45 e catálogo organizado.", icon: ShoppingBag },
-  { title: "Checkout", description: "Endereço, WhatsApp, pagamento na entrega, cupom e observação.", icon: ClipboardCheck },
+  { title: "Cadastro e login", description: "Acesso por telefone e senha para manter sua conta protegida.", icon: Smartphone },
+  { title: "Endereços salvos", description: "Cadastre endereço principal, telefone, WhatsApp e localização opcional.", icon: Home },
+  { title: "Loja P13, P20 e P45", description: "Catálogo organizado para escolher o botijão disponível para pedido.", icon: ShoppingBag },
+  { title: "Checkout completo", description: "Endereço, WhatsApp, pagamento na entrega, cupom e observação antes de confirmar.", icon: ClipboardCheck },
   { title: "Cupons", description: "Aproveite cupons e campanhas disponíveis na hora do pedido.", icon: Gift },
   { title: "Pagamento na entrega", description: "Finalize o pedido com pagamento conforme as opções disponíveis no app.", icon: Wallet },
   { title: "Acompanhamento", description: "Status do pedido do início à entrega.", icon: Truck },
@@ -85,11 +85,19 @@ export const orderStatuses = [
 ];
 
 export const partnerFeatures = [
-  "Receba pedidos pelo app",
-  "Organize entregas",
-  "Use cupons e campanhas",
-  "Acompanhe clientes",
-  "Trabalhe com entregadores",
-  "Envie notificações para clientes",
-  "Acompanhe a operação com painel administrativo",
+  "Recebimento de pedidos pelo app",
+  "Organização de entregas",
+  "Campanhas e cupons",
+  "Relacionamento com clientes",
+  "Notificações para clientes",
+  "Painel administrativo",
+  "Gestão de entregadores",
+  "Expansão regional",
+];
+
+export const resellerAudience = [
+  "Revendas de gás",
+  "Operações locais",
+  "Distribuidores regionais",
+  "Negócios que querem vender mais pelo digital",
 ];

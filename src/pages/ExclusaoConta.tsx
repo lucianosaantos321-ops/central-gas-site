@@ -10,6 +10,7 @@ export function ExclusaoConta() {
       <SEO title="Exclusão de conta e dados" path="/exclusao-de-conta" description="Solicite exclusão da sua conta e dos seus dados no Central Gás pelo WhatsApp oficial." />
       <LegalPageLayout title="Exclusão de conta e dados" description="Veja como solicitar a exclusão da sua conta e de dados pessoais relacionados ao Central Gás.">
         <p>Para solicitar a exclusão da sua conta e dos seus dados, entre em contato pelo WhatsApp {siteConfig.phoneDisplay} informando o número cadastrado no app.</p>
+        <p>Você também pode usar o e-mail oficial {siteConfig.emailPlaceholder}. O site oficial do Central Gás é {siteConfig.baseUrl}.</p>
         <p>
           <LinkButton href={siteConfig.accountDeletionUrl}>
             <Trash2 size={18} aria-hidden="true" />

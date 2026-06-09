@@ -1,4 +1,4 @@
-import { Bell, Home, LogIn, MessageCircle, ShoppingBag, Trash2 } from "lucide-react";
+import { Bell, Home, LogIn, Mail, MessageCircle, ShoppingBag, Trash2 } from "lucide-react";
 import { FeatureCard } from "../components/ui/FeatureCard";
 import { LinkButton } from "../components/ui/Button";
 import { SectionTitle } from "../components/ui/SectionTitle";
@@ -31,6 +31,15 @@ export function Suporte() {
           <LinkButton href={siteConfig.whatsappUrl} className="mt-6 bg-white text-brand-700 shadow-none">
             Falar no WhatsApp
           </LinkButton>
+        </div>
+        <div className="mt-6 rounded-[2rem] border border-orange-100 bg-white p-6 shadow-soft">
+          <div className="flex items-start gap-3">
+            <Mail className="mt-1 shrink-0 text-brand-600" size={22} aria-hidden="true" />
+            <div>
+              <h2 className="text-xl font-black text-slate-950">E-mail oficial</h2>
+              <p className="mt-2 text-slate-600">{siteConfig.emailPlaceholder}</p>
+            </div>
+          </div>
         </div>
         <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
           {supportCards.map((card) => (
