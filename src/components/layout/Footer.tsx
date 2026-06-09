@@ -60,6 +60,9 @@ export function Footer() {
 
         <div>
           <h3 className="font-black">Baixe o app</h3>
+          <p className="mt-3 text-sm leading-6 text-slate-400">
+            Primeira versao disponivel para Android.
+          </p>
           <div className="mt-4 grid gap-3">
             <PlayStoreButton className="bg-white text-brand-700 shadow-none" />
             <WhatsAppButton className="border-white/20 bg-white/10 text-white shadow-none" />

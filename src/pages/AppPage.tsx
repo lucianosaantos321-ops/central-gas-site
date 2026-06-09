@@ -11,27 +11,34 @@ export function AppPage() {
   return (
     <>
       <SEO
-        title="O app Central Gás"
+        title="O app Central Gas"
         path="/app"
-        description="Conheça as funções do app Central Gás: cadastro, endereços, loja, checkout, cupons, monitoramento, pedidos e notificações."
+        description="Conheca o app Central Gas para Android: cadastro, enderecos, loja, checkout, cupons, monitoramento, pedidos e notificacoes."
       />
       <main className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <SectionTitle
           eyebrow="App Android"
-          title="O app Central Gás"
-          description="Uma experiência mobile para pedir gás, organizar endereços, acompanhar pedidos e planejar a próxima troca do botijão."
+          title="O app Central Gas"
+          description="A primeira versao esta disponivel para Android na Play Store, com pedido de gas, enderecos, acompanhamento e monitoramento estimado."
         />
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <PlayStoreButton />
           <WhatsAppButton />
         </div>
+        <p className="mt-3 max-w-2xl text-sm font-bold text-slate-500">
+          No momento, o app oficial esta disponivel para dispositivos Android.
+        </p>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {appFeatures.map((feature) => (
             <FeatureCard key={feature.title} {...feature} />
           ))}
         </div>
         <div className="mt-14">
-          <SectionTitle center title="Telas preparadas para o cliente" description="Use esses espaços para substituir pelos prints reais antes do lançamento público." />
+          <SectionTitle
+            center
+            title="Telas do app Central Gas"
+            description="Conheca a experiencia da primeira versao para Android."
+          />
           <div className="mt-8">
             <ScreenshotGallery />
           </div>

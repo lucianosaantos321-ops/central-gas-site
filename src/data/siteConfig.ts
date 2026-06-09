@@ -9,7 +9,7 @@ export const siteConfig = {
   whatsappUrl: "https://wa.me/5561992982454",
   accountDeletionUrl:
     "https://wa.me/5561992982454?text=Olá,%20quero%20solicitar%20a%20exclusão%20da%20minha%20conta%20e%20dos%20meus%20dados%20no%20Central%20Gás.",
-  playStoreUrl: "PLAY_STORE_URL",
+  playStoreUrl: "https://play.google.com/store/apps/details?id=com.centralgas.cliente",
   supportHours: "Atendimento conforme disponibilidade da operação local.",
   baseUrl: "https://centralgas.com.br",
   ogImage: "/og-image.png",
