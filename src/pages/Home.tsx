@@ -77,7 +77,7 @@ export function Home() {
             <p className="mt-5 max-w-4xl leading-8 text-slate-600">
               A operação atende inicialmente o Guará/DF e regiões próximas conforme disponibilidade local,
               horário de atendimento e condições da revenda responsável. O objetivo é oferecer uma forma
-              mais prática de solicitar gás de cozinha, sem prometer cobertura em todos os endereços.
+              mais prática de solicitar gás.
             </p>
           </div>
         </RevealOnScroll>
