@@ -1,7 +1,7 @@
-import homeShot from "../assets/screenshots/app-home.svg";
-import checkoutShot from "../assets/screenshots/app-checkout.svg";
-import trackingShot from "../assets/screenshots/app-tracking.svg";
-import monitorShot from "../assets/screenshots/app-monitoring.svg";
+import checkoutShot from "../assets/screenshots/app-real-checkout.jpeg";
+import homeShot from "../assets/screenshots/app-real-home.jpeg";
+import monitorShot from "../assets/screenshots/app-real-monitor.jpeg";
+import trackingShot from "../assets/screenshots/app-real-order.jpeg";
 
 export const screenshots = [
   {
