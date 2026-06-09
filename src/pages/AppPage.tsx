@@ -11,14 +11,14 @@ export function AppPage() {
   return (
     <>
       <SEO
-        title="O app Central Gas"
+        title="O app Central Gás"
         path="/app"
-        description="Conheca o app Central Gas para Android: cadastro, enderecos, loja, checkout, cupons, monitoramento, pedidos e notificacoes."
+        description="Conheça o app Central Gás para Android: cadastro, endereços, loja, checkout, cupons, monitoramento, pedidos e notificações."
       />
       <main className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <SectionTitle
           eyebrow="App Android"
-          title="O app Central Gas"
+          title="O app Central Gás"
           description="Baixe o Central Gás para Android e acompanhe pedidos, endereços e monitoramento estimado em uma experiência simples."
         />
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -36,7 +36,7 @@ export function AppPage() {
         <div className="mt-14">
           <SectionTitle
             center
-            title="Telas do app Central Gas"
+            title="Telas do app Central Gás"
             description="Veja como o app organiza pedido, entrega e monitoramento pelo celular."
           />
           <div className="mt-8">

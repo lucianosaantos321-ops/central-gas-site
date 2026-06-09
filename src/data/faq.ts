@@ -12,12 +12,12 @@ export const faqItems: FAQItem[] = [
   {
     question: "Como fazer um pedido?",
     answer:
-      "Baixe o app, crie sua conta, cadastre seu endereco, escolha o botijao disponivel e confirme o pedido no checkout.",
+      "Baixe o app, crie sua conta, cadastre seu endereço, escolha o botijão disponível e confirme o pedido no checkout.",
   },
   {
-    question: "Como cadastrar endereco?",
+    question: "Como cadastrar endereço?",
     answer:
-      "No app, acesse a area de enderecos, informe apelido, rua, numero, bairro, cidade e WhatsApp com DDD. A localizacao exata e opcional.",
+      "No app, acesse a área de endereços, informe apelido, rua, número, bairro, cidade e WhatsApp com DDD. A localização exata é opcional.",
   },
   {
     question: "Como acompanhar a entrega?",
@@ -25,44 +25,44 @@ export const faqItems: FAQItem[] = [
       "Depois de criar o pedido, acompanhe os status no app: criado, confirmado, buscando entregador, preparando, saiu para entrega e entregue.",
   },
   {
-    question: "Como funciona o monitoramento do gas?",
+    question: "Como funciona o monitoramento do gás?",
     answer:
-      "Voce informa a media de duracao do botijao e a data aproximada da ultima troca. O app calcula uma estimativa para ajudar no planejamento.",
+      "Você informa a média de duração do botijão e a data aproximada da última troca. O app calcula uma estimativa para ajudar no planejamento.",
   },
   {
-    question: "O app mede o botijao de verdade?",
+    question: "O app mede o botijão de verdade?",
     answer:
-      "Nao. O monitoramento e estimado e depende das informacoes preenchidas pelo usuario. O app nao mede fisicamente peso ou volume do botijao.",
+      "Não. O monitoramento é estimado e depende das informações preenchidas pelo usuário. O app não mede fisicamente peso ou volume do botijão.",
   },
   {
     question: "Como usar cupom?",
     answer:
-      "Quando houver campanha disponivel, o cupom podera ser informado no checkout antes de confirmar o pedido.",
+      "Quando houver campanha disponível, o cupom poderá ser informado no checkout antes de confirmar o pedido.",
   },
   {
-    question: "Como recebo notificacoes?",
+    question: "Como recebo notificações?",
     answer:
-      "Ao permitir notificacoes no Android, o app pode avisar sobre pedido, monitoramento do gas e promocoes conforme suas preferencias.",
+      "Ao permitir notificações no Android, o app pode avisar sobre pedido, monitoramento do gás e promoções conforme suas preferências.",
   },
   {
     question: "Como alterar meus dados?",
     answer:
-      "Acesse a pagina Conta dentro do app para revisar dados disponiveis e preferencias. Para dados sensiveis, fale com o suporte.",
+      "Acesse a página Conta dentro do app para revisar dados disponíveis e preferências. Para dados sensíveis, fale com o suporte.",
   },
   {
     question: "Como excluir minha conta?",
     answer:
-      "Acesse a pagina Exclusao de conta deste site e solicite atendimento pelo WhatsApp oficial informando o numero cadastrado.",
+      "Acesse a página Exclusão de conta deste site e solicite atendimento pelo WhatsApp oficial informando o número cadastrado.",
   },
   {
     question: "O app vende meus dados?",
     answer:
-      "Nao. Os dados sao usados para operacao do servico, atendimento, entrega, suporte, seguranca e notificacoes.",
+      "Não. Os dados são usados para operação do serviço, atendimento, entrega, suporte, segurança e notificações.",
   },
   {
-    question: "Quais regioes sao atendidas?",
+    question: "Quais regiões são atendidas?",
     answer:
-      "A disponibilidade pode variar conforme regiao, horario e operacao local. A regiao inicial e Guara/DF, conforme disponibilidade.",
+      "A disponibilidade pode variar conforme região, horário e operação local. A região inicial é Guará/DF, conforme disponibilidade.",
   },
   {
     question: "Quais formas de pagamento existem?",
@@ -72,7 +72,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "O app cobra taxa?",
     answer:
-      "Valores, taxas e disponibilidade podem variar conforme operacao local e serao informados no fluxo do pedido quando aplicavel.",
+      "Valores, taxas e disponibilidade podem variar conforme operação local e serão informados no fluxo do pedido quando aplicável.",
   },
   {
     question: "O que fazer se o pedido atrasar?",

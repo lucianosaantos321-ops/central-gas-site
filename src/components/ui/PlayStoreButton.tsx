@@ -11,7 +11,7 @@ export function PlayStoreButton({ className = "" }: { className?: string }) {
       target={isPlaceholder ? undefined : "_blank"}
       rel={isPlaceholder ? undefined : "noreferrer"}
       className={className}
-      aria-label="Baixar o app Central Gas para Android na Play Store"
+      aria-label="Baixar o app Central Gás para Android na Play Store"
     >
       <Download size={18} aria-hidden="true" />
       Baixar para Android
