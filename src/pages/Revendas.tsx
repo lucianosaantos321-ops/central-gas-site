@@ -1,6 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import { CTASection } from "../components/ui/CTASection";
 import { LinkButton } from "../components/ui/Button";
+import { RevealOnScroll } from "../components/ui/RevealOnScroll";
 import { SectionTitle } from "../components/ui/SectionTitle";
 import { SEO } from "../components/ui/SEO";
 import { WhatsAppButton } from "../components/ui/WhatsAppButton";
@@ -16,7 +17,7 @@ export function Revendas() {
         description="Programa de revendas em preparação para operações interessadas em receber pedidos pelo digital, organizar entregas e se aproximar dos clientes."
       />
       <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-8 lg:grid-cols-[1fr_0.75fr] lg:items-start">
+        <RevealOnScroll className="grid gap-8 lg:grid-cols-[1fr_0.75fr] lg:items-start">
           <div>
             <span className="inline-flex rounded-full bg-orange-100 px-4 py-2 text-sm font-black uppercase tracking-[0.14em] text-brand-700">
               Em breve
@@ -39,32 +40,36 @@ export function Revendas() {
           <div className="rounded-[2rem] border border-orange-100 bg-white p-6 shadow-soft">
             <h2 className="text-2xl font-black">O que está sendo planejado</h2>
             <div className="mt-5 grid gap-3">
-              {partnerFeatures.map((feature) => (
-                <div key={feature} className="flex items-center gap-3 rounded-2xl bg-orange-50 px-4 py-3 font-bold text-slate-800">
+              {partnerFeatures.map((feature, index) => (
+                <RevealOnScroll key={feature} delay={index * 45}>
+                <div className="premium-card flex items-center gap-3 rounded-2xl border border-orange-100 bg-orange-50 px-4 py-3 font-bold text-slate-800">
                   <CheckCircle2 className="text-brand-600" size={20} />
                   {feature}
                 </div>
+                </RevealOnScroll>
               ))}
             </div>
           </div>
-        </div>
+        </RevealOnScroll>
 
-        <section className="mt-12">
+        <RevealOnScroll as="section" className="mt-12">
           <SectionTitle
             eyebrow="Perfil"
             title="Para quem é"
             description="A iniciativa é voltada para operações que desejam estruturar melhor o atendimento digital."
           />
           <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {resellerAudience.map((item) => (
-              <div key={item} className="rounded-2xl border border-orange-100 bg-white px-5 py-4 font-black text-slate-800 shadow-soft">
+            {resellerAudience.map((item, index) => (
+              <RevealOnScroll key={item} delay={index * 70}>
+              <div className="premium-card rounded-2xl border border-orange-100 bg-white px-5 py-4 font-black text-slate-800 shadow-soft">
                 {item}
               </div>
+              </RevealOnScroll>
             ))}
           </div>
-        </section>
+        </RevealOnScroll>
 
-        <section className="mt-12 rounded-[2rem] border border-orange-100 bg-white p-7 shadow-soft md:p-10">
+        <RevealOnScroll as="section" className="mt-12 rounded-[2rem] border border-orange-100 bg-white p-7 shadow-soft md:p-10">
           <SectionTitle
             eyebrow="Cadastre seu interesse"
             title="Fale conosco para saber mais"
@@ -75,7 +80,7 @@ export function Revendas() {
               Quero saber mais sobre revendas
             </LinkButton>
           </div>
-        </section>
+        </RevealOnScroll>
       </main>
       <CTASection title="Programa de revendas em breve" description="Estamos preparando novas soluções comerciais. Fale conosco pelo WhatsApp para entrar na lista de interesse." />
     </>

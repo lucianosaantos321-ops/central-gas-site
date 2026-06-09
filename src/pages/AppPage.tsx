@@ -2,6 +2,7 @@ import { CheckCircle2 } from "lucide-react";
 import { CTASection } from "../components/ui/CTASection";
 import { FeatureCard } from "../components/ui/FeatureCard";
 import { PlayStoreButton } from "../components/ui/PlayStoreButton";
+import { RevealOnScroll } from "../components/ui/RevealOnScroll";
 import { ScreenshotGallery } from "../components/ui/ScreenshotGallery";
 import { SectionTitle } from "../components/ui/SectionTitle";
 import { SEO } from "../components/ui/SEO";
@@ -27,6 +28,7 @@ export function AppPage() {
         description="Conheça o app Central Gás para Android: cadastro, endereços, loja, checkout, cupons, monitoramento, pedidos e notificações."
       />
       <main className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <RevealOnScroll>
         <SectionTitle
           eyebrow="App Android"
           title="O app Central Gás"
@@ -39,6 +41,8 @@ export function AppPage() {
         <p className="mt-3 max-w-2xl text-sm font-bold text-slate-500">
           Disponível inicialmente para Android na Play Store.
         </p>
+        </RevealOnScroll>
+        <RevealOnScroll delay={90}>
         <div className="mt-8 rounded-[2rem] border border-orange-100 bg-white p-6 shadow-soft">
           <h2 className="text-2xl font-black text-slate-950">O que você encontra no app</h2>
           <div className="mt-5 grid gap-3 md:grid-cols-2">
@@ -50,12 +54,15 @@ export function AppPage() {
             ))}
           </div>
         </div>
+        </RevealOnScroll>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {appFeatures.map((feature) => (
-            <FeatureCard key={feature.title} {...feature} />
+          {appFeatures.map((feature, index) => (
+            <RevealOnScroll key={feature.title} delay={index * 55}>
+              <FeatureCard {...feature} />
+            </RevealOnScroll>
           ))}
         </div>
-        <div className="mt-14">
+        <RevealOnScroll className="mt-14">
           <SectionTitle
             center
             title="Telas do app Central Gás"
@@ -64,7 +71,7 @@ export function AppPage() {
           <div className="mt-8">
             <ScreenshotGallery />
           </div>
-        </div>
+        </RevealOnScroll>
       </main>
       <CTASection />
     </>

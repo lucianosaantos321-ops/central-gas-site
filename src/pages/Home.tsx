@@ -7,6 +7,7 @@ import { FeatureCard } from "../components/ui/FeatureCard";
 import { LinkButton } from "../components/ui/Button";
 import { PartnerCTA } from "../components/ui/PartnerCTA";
 import { PlayStoreButton } from "../components/ui/PlayStoreButton";
+import { RevealOnScroll } from "../components/ui/RevealOnScroll";
 import { ScreenshotGallery } from "../components/ui/ScreenshotGallery";
 import { SectionTitle } from "../components/ui/SectionTitle";
 import { SEO } from "../components/ui/SEO";
@@ -26,8 +27,8 @@ export function Home() {
         keywords="Central Gás, entrega de gás no Guará DF, pedir gás pelo app, comprar botijão de gás, gás de cozinha, app para pedir gás"
       />
       <main>
-        <section className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 md:grid-cols-[1fr_0.78fr] md:items-center lg:px-8 lg:py-16">
-          <div className="rounded-[2.2rem] app-gradient p-7 text-white shadow-glow md:p-10">
+        <RevealOnScroll as="section" className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 md:grid-cols-[1fr_0.78fr] md:items-center lg:px-8 lg:py-16">
+          <div className="premium-hero rounded-[2.2rem] p-7 text-white shadow-glow md:p-10">
             <p className="text-sm font-black uppercase tracking-[0.18em] text-white/85">
               {siteConfig.name}
             </p>
@@ -49,22 +50,24 @@ export function Home() {
             </div>
           </div>
           <AppMockup />
-        </section>
+        </RevealOnScroll>
 
-        <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <RevealOnScroll as="section" className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <SectionTitle
             eyebrow="Benefícios"
             title="Tudo para pedir gás com mais controle"
             description="Peça gás, acompanhe seus pedidos e organize sua rotina pelo app Central Gás."
           />
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {homeBenefits.map((item) => (
-              <FeatureCard key={item.title} {...item} />
+            {homeBenefits.map((item, index) => (
+              <RevealOnScroll key={item.title} delay={index * 70}>
+                <FeatureCard {...item} />
+              </RevealOnScroll>
             ))}
           </div>
-        </section>
+        </RevealOnScroll>
 
-        <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <RevealOnScroll as="section" className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <div className="rounded-[2rem] border border-orange-100 bg-white p-7 shadow-soft md:p-10">
             <SectionTitle
               eyebrow="Atendimento local"
@@ -77,23 +80,25 @@ export function Home() {
               mais prática de solicitar gás de cozinha, sem prometer cobertura em todos os endereços.
             </p>
           </div>
-        </section>
+        </RevealOnScroll>
 
-        <section id="como-funciona" className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <RevealOnScroll as="section" id="como-funciona" className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <SectionTitle
             center
             eyebrow="Como funciona"
             title="Do pedido à entrega em poucos passos"
             description="O fluxo foi pensado para ser simples no celular: escolha, confirme, acompanhe e receba."
           />
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="timeline-grid mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {howItWorksSteps.slice(3, 7).map((step, index) => (
-              <StepCard key={step.title} index={index + 1} {...step} />
+              <RevealOnScroll key={step.title} delay={index * 80}>
+                <StepCard index={index + 1} {...step} />
+              </RevealOnScroll>
             ))}
           </div>
-        </section>
+        </RevealOnScroll>
 
-        <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <RevealOnScroll as="section" className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <div className="grid gap-6 lg:grid-cols-2 lg:items-center">
             <div className="rounded-[2rem] bg-slate-950 p-7 text-white md:p-10">
               <p className="text-sm font-black uppercase tracking-[0.18em] text-orange-200">
@@ -124,9 +129,9 @@ export function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </RevealOnScroll>
 
-        <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <RevealOnScroll as="section" className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <SectionTitle
             center
             eyebrow="Screenshots"
@@ -136,9 +141,9 @@ export function Home() {
           <div className="mt-8">
             <ScreenshotGallery />
           </div>
-        </section>
+        </RevealOnScroll>
 
-        <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <RevealOnScroll as="section" className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
           <div className="grid gap-6 lg:grid-cols-[1fr_0.8fr]">
             <div className="rounded-[2rem] border border-orange-100 bg-white p-7 shadow-soft md:p-10">
               <SectionTitle title="Por que usar o Central Gás?" />
@@ -158,9 +163,9 @@ export function Home() {
             </div>
             <PartnerCTA />
           </div>
-        </section>
+        </RevealOnScroll>
 
-        <section className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
+        <RevealOnScroll as="section" className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
           <SectionTitle center eyebrow="FAQ" title="Dúvidas frequentes" />
           <div className="mt-8">
             <FAQAccordion items={faqItems.slice(0, 6)} />
@@ -170,7 +175,7 @@ export function Home() {
               Ver FAQ completo
             </LinkButton>
           </div>
-        </section>
+        </RevealOnScroll>
 
         <CTASection />
       </main>

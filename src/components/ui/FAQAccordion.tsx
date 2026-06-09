@@ -10,7 +10,7 @@ export function FAQAccordion({ items }: { items: FAQItem[] }) {
       {items.map((item, index) => {
         const isOpen = open === index;
         return (
-          <div key={item.question} className="rounded-3xl border border-orange-100 bg-white shadow-sm">
+          <div key={item.question} className="premium-card rounded-3xl border border-orange-100 bg-white shadow-sm">
             <button
               type="button"
               onClick={() => setOpen(isOpen ? -1 : index)}
@@ -24,7 +24,11 @@ export function FAQAccordion({ items }: { items: FAQItem[] }) {
                 aria-hidden="true"
               />
             </button>
-            {isOpen ? <p className="px-5 pb-5 leading-7 text-slate-600">{item.answer}</p> : null}
+            <div className={`faq-panel ${isOpen ? "is-open" : ""}`}>
+              <div className="overflow-hidden">
+                <p className="px-5 pb-5 leading-7 text-slate-600">{item.answer}</p>
+              </div>
+            </div>
           </div>
         );
       })}

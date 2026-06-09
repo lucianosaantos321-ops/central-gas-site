@@ -19,7 +19,7 @@ const styles = {
 };
 
 const base =
-  "inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl px-5 py-3 text-sm font-black transition focus:outline-none focus:ring-4 focus:ring-orange-200";
+  "inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl px-5 py-3 text-sm font-black transition duration-200 hover:shadow-glow focus:outline-none focus:ring-4 focus:ring-orange-200 active:scale-[0.98]";
 
 type ButtonProps = BaseProps & ButtonHTMLAttributes<HTMLButtonElement>;
 type LinkButtonProps = BaseProps &

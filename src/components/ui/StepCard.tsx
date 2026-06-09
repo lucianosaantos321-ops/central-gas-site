@@ -12,13 +12,13 @@ export function StepCard({
   icon?: LucideIcon;
 }) {
   return (
-    <div className="relative rounded-3xl border border-orange-100 bg-white p-6 shadow-soft">
+    <div className="premium-card relative rounded-3xl border border-orange-100 bg-white p-6 shadow-soft">
       <div className="mb-5 flex items-center gap-3">
         <div className="flex h-11 w-11 items-center justify-center rounded-2xl app-gradient text-sm font-black text-white">
           {index}
         </div>
         {Icon ? (
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-orange-50 text-brand-600">
+          <div className="premium-card-icon flex h-11 w-11 items-center justify-center rounded-2xl bg-orange-50 text-brand-600">
             <Icon size={22} aria-hidden="true" />
           </div>
         ) : null}
