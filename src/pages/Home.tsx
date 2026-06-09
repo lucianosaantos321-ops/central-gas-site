@@ -55,7 +55,7 @@ export function Home() {
           <SectionTitle
             eyebrow="Benefícios"
             title="Tudo para pedir gás com mais controle"
-            description="O site apresenta as funções do app cliente de forma clara, sem prometer recursos que ainda não estão ativos."
+            description="Peça gás, acompanhe seus pedidos e organize sua rotina pelo app Central Gás."
           />
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {homeBenefits.map((item) => (
@@ -116,7 +116,7 @@ export function Home() {
             center
             eyebrow="Screenshots"
             title="Visual do app Central Gás"
-            description="Estrutura pronta para trocar por prints reais do app. Os modelos atuais seguem a identidade visual da primeira versão."
+            description="Conheça as principais telas do app e veja como é simples pedir, acompanhar e monitorar seu gás."
           />
           <div className="mt-8">
             <ScreenshotGallery />

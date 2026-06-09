@@ -7,7 +7,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "Como baixar o app?",
     answer:
-      "A primeira versao do Central Gas esta disponivel para Android na Play Store. Use os botoes de download deste site para acessar o link oficial.",
+      "Baixe o Central Gás para Android pela Play Store usando os botões de download deste site.",
   },
   {
     question: "Como fazer um pedido?",
@@ -67,7 +67,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "Quais formas de pagamento existem?",
     answer:
-      "A primeira versao trabalha com pagamento conforme informado no app, sem prometer pagamento online quando ele ainda nao estiver ativo.",
+      "As formas de pagamento são informadas no app durante a confirmação do pedido.",
   },
   {
     question: "O app cobra taxa?",

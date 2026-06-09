@@ -16,11 +16,11 @@ export function Contato() {
           <FeatureCard title="WhatsApp" description={siteConfig.phoneDisplay} icon={MessageCircle} />
           <FeatureCard title="E-mail" description={siteConfig.emailPlaceholder} icon={Mail} />
           <FeatureCard title="Região" description={siteConfig.region} icon={MapPin} />
-          <FeatureCard title="Revendas" description="CTA para futuras parcerias comerciais." icon={Store} />
+          <FeatureCard title="Revendas" description="Parcerias comerciais e atendimento para revendas." icon={Store} />
         </div>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <LinkButton href={siteConfig.whatsappUrl}>Falar no WhatsApp</LinkButton>
-          <LinkButton to="/revendas" variant="secondary">CTA para revendas</LinkButton>
+          <LinkButton to="/revendas" variant="secondary">Falar sobre revendas</LinkButton>
         </div>
       </main>
       <CTASection />

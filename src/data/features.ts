@@ -54,8 +54,8 @@ export const appFeatures = [
   { title: "Enderecos salvos", description: "Cadastre endereco principal, telefone e localizacao opcional.", icon: Home },
   { title: "Loja", description: "Estrutura para botijoes P13, P20, P45 e catalogo organizado.", icon: ShoppingBag },
   { title: "Checkout", description: "Endereco, WhatsApp, pagamento na entrega, cupom e observacao.", icon: ClipboardCheck },
-  { title: "Cupons", description: "Base preparada para promocoes, primeira compra e campanhas futuras.", icon: Gift },
-  { title: "Pagamento na entrega", description: "Fluxo preparado para confirmar pedido sem prometer pagamento online.", icon: Wallet },
+  { title: "Cupons", description: "Aproveite cupons e campanhas disponíveis na hora do pedido.", icon: Gift },
+  { title: "Pagamento na entrega", description: "Finalize o pedido com pagamento conforme as opções disponíveis no app.", icon: Wallet },
   { title: "Acompanhamento", description: "Status do pedido do inicio a entrega.", icon: Truck },
   { title: "PIN de seguranca", description: "Pedido pode usar PIN para confirmar a entrega com mais seguranca.", icon: ShieldCheck },
   { title: "Notificacoes", description: "Alertas sobre pedido, gas e novidades importantes.", icon: Bell },
@@ -65,7 +65,7 @@ export const appFeatures = [
 ];
 
 export const howItWorksSteps = [
-  { title: "Baixe o app", description: "Instale a primeira versao do Central Gas para Android pela Play Store.", icon: Smartphone },
+  { title: "Baixe o app", description: "Instale o Central Gás para Android pela Play Store.", icon: Smartphone },
   { title: "Crie sua conta", description: "Informe seus dados principais para fazer pedidos com seguranca.", icon: ShieldCheck },
   { title: "Cadastre o endereco", description: "Salve o local de entrega e defina o endereco principal.", icon: MapPin },
   { title: "Escolha o botijao", description: "Selecione o produto disponivel na loja do app.", icon: PackageCheck },
@@ -91,5 +91,5 @@ export const partnerFeatures = [
   "Acompanhe clientes",
   "Trabalhe com entregadores",
   "Envie notificacoes para clientes",
-  "Prepare operacao com painel administrativo",
+  "Acompanhe a operação com painel administrativo",
 ];

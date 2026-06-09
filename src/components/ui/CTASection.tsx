@@ -3,7 +3,7 @@ import { WhatsAppButton } from "./WhatsAppButton";
 
 export function CTASection({
   title = "Pronto para pedir gas com mais praticidade?",
-  description = "A primeira versao do Central Gas esta disponivel para Android na Play Store. Para suporte, fale conosco pelo WhatsApp.",
+  description = "Baixe o Central Gás para Android na Play Store ou fale com o suporte pelo WhatsApp.",
 }: {
   title?: string;
   description?: string;

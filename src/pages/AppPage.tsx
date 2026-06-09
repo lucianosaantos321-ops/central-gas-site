@@ -19,14 +19,14 @@ export function AppPage() {
         <SectionTitle
           eyebrow="App Android"
           title="O app Central Gas"
-          description="A primeira versao esta disponivel para Android na Play Store, com pedido de gas, enderecos, acompanhamento e monitoramento estimado."
+          description="Baixe o Central Gás para Android e acompanhe pedidos, endereços e monitoramento estimado em uma experiência simples."
         />
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <PlayStoreButton />
           <WhatsAppButton />
         </div>
         <p className="mt-3 max-w-2xl text-sm font-bold text-slate-500">
-          No momento, o app oficial esta disponivel para dispositivos Android.
+          Disponível para Android na Play Store.
         </p>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {appFeatures.map((feature) => (
@@ -37,7 +37,7 @@ export function AppPage() {
           <SectionTitle
             center
             title="Telas do app Central Gas"
-            description="Conheca a experiencia da primeira versao para Android."
+            description="Veja como o app organiza pedido, entrega e monitoramento pelo celular."
           />
           <div className="mt-8">
             <ScreenshotGallery />

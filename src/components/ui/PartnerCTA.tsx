@@ -9,8 +9,7 @@ export function PartnerCTA() {
       </div>
       <h3 className="text-2xl font-black text-slate-950">Tem uma revenda?</h3>
       <p className="mt-3 leading-7 text-slate-600">
-        O Central Gás está sendo preparado para crescer com operações locais. Fale conosco
-        para interesse comercial e futuras possibilidades.
+        O Central Gás ajuda operações locais a receber pedidos digitais e organizar a experiência dos clientes.
       </p>
       <LinkButton to="/revendas" variant="secondary" className="mt-5" showArrow>
         Conhecer página de revendas
